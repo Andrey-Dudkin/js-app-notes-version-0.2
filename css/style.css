@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffee00;
+    margin: 0;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.notes_app {
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+.title {
+    font-size: 60px;
+    color: #000000;
+}
+.interface{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 11px;
+}
+.delete_notes {
+    font-size: 18px;  
+}
+.input {
+    outline: none;
+    border: solid 2px #ffee00;
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    color: #ffee00;
+    background-color: rgba(0, 0, 0,0.8);
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.9);
+    padding-left: 15px;
+}
+.input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #ffee00;
+}
+.notes {
+    margin-top: 80px;
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.btn_add_note{
+    outline: none;
+    border: solid 2px #ffee00;
+    font-size: 18px;
+    color: #ffee00;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: ease 1s;
+}
+.btn_add_note:hover{
+    color: #000000;
+    background-color: #ffee00;
+
+}
+.note{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+    position: relative;
+}
+.note p{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.btn_delete{
+    outline: none;
+    border: none;
+    display: none;
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffee00;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.note:hover .btn_delete{
+    display: block;
+}
